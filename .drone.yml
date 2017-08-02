@@ -1,8 +1,4 @@
-UPDATE THE .DRONE.YML CONFIGURATION
-STEPS
-Open the .drone.yml file in your editor. We will be adding the next phase, publish to the existing configuration. Update your drone file to look like this.
-Note You can simply copy and paste the contents from below directly into your file. The notation of $$VARIABLE references details stored encrypted within the .drone.sec file. Do NOT replace them with clear text credentials.
- build:
+build:
     build_starting:
         image: python:2
         commands:
